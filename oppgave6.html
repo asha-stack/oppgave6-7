@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oppgave 6</title>
+</head>
+<body>
+    <h1 id="forste"></h1>
+    <h1 id="tredje"></h1>
+    <h1 id="an"></h1>
+    <h1 id="innocent"></h1>
+    <h1 id="warrior"></h1>
+    <p id="text"></p>
+    <p id="lowercase"></p>
+</body>
+<script>
+    // 1. Create a variable to store the name of Norway's capital. 
+    // Show only first and third letters.
+    city = 'Oslo';
+    console.log(city[0])
+    console.log(city[2])
+    document.getElementById("forste").innerHTML = city [0];
+    document.getElementById("tredje").innerHTML = city [2];
+
+    // 2. Opprett en variabel for å lagre navnet ditt.
+    // Vis bare den første bokstaven i hvert ord i ditt navn.
+    var navn = "Asha Maha Maha"
+    var acronym = navn.match(/\b(\w)/g).join('');
+    console.log(acronym);
+
+    // 3.Opprett en variabel for å lagre navnet på en sang du liker.
+    //  Bruk funksjonen slice() til å trekke ut alle ord i sangens navn 
+    // (en av gangen).
+    var sang = 'An Innocent Warrior';
+    console.log(sang.slice(0, 2));
+    console.log(sang.slice(3, 11));
+    console.log(sang.slice(12));
+    document.getElementById("an").innerHTML = sang.slice(0, 2);
+    document.getElementById("innocent").innerHTML = sang.slice(3, 11);
+    document.getElementById("warrior").innerHTML = sang.slice(12);
+
+    // 4. Opprett en variabel for å lagre adressen din. 
+    // Bruk funksjonen toUpperCase() til å endre alle
+    // bokstaver til store bokstaver.
+
+        var address = "kleppemarka27";
+        var res = address.toUpperCase();
+        document.getElementById("text").innerHTML = res;
+
+
+    // 5. Bruk funksjonen toLowerCase() til å endre en
+    //  setning med store bokstaver til små bokstaver.
+    var str = "LEARNING IS FUN";
+    var low = str.toLowerCase();
+    document.getElementById("lowercase").innerHTML = low;
+    
+</script>
+</html>
